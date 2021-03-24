@@ -43,6 +43,7 @@ public class TelaLoguin extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Login");
         setResizable(false);
 
         jButton1.setText("Entrar");
@@ -136,10 +137,11 @@ public class TelaLoguin extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void jPasswordFieldLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordFieldLoginActionPerformed
@@ -158,7 +160,7 @@ public class TelaLoguin extends javax.swing.JFrame {
                 dispose();
         } 
         else {
-            JOptionPane.showMessageDialog(null, "Erro no acesso!");            
+            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!", "Erro no acesso!", JOptionPane.ERROR_MESSAGE);            
         }
   
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -172,7 +174,7 @@ public class TelaLoguin extends javax.swing.JFrame {
                 dispose();
         } 
         else {
-            JOptionPane.showMessageDialog(null, "Erro no acesso!");            
+            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!", "Erro no acesso!", JOptionPane.ERROR_MESSAGE);            
         }            
         }
     }//GEN-LAST:event_jPasswordFieldLoginKeyPressed
