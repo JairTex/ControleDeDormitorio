@@ -1,3 +1,6 @@
+package Classes;
+
+
 public final class Dormitorio {
     private String nomeAdm, loginAdm, senhaAdm;
     private int numero;

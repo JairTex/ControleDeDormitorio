@@ -1,8 +1,21 @@
+package Classes;
+
+
 public final class Cama {
     private int numero, matricula, ano, anoOcupacao;
-    private String discente, curso;
+    public String discente, curso;
     private boolean ocupado;
 
+    /**
+     *
+     * @param numero
+     * @param ano
+     * @param anoOcupacao
+     * @param discente
+     * @param curso
+     * @param ocupado
+     */
+    
     public Cama(int numero, int ano, int anoOcupacao, String discente, String curso, boolean ocupado) {
         this.setNumero(numero);
         this.setAno(ano);
@@ -11,6 +24,7 @@ public final class Cama {
         this.setCurso(curso);
         this.setOcupado(ocupado);
     }
+
 
     public int getNumero() {
         return numero;
@@ -74,6 +88,11 @@ public final class Cama {
     }
     
     public void desocupar(){
+        this.setNumero(numero);
+        this.setAno(0000);
+        this.setAnoOcupacao(0000);
+        this.setDiscente(null);
+        this.setCurso(null);
         this.setOcupado(false);
     }
 }
