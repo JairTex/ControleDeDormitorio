@@ -2,6 +2,6 @@
 
 *Nap 2: Ufra - Paragominas*
 
-- Ultimas mudanças: Inserção de tela de login e tela principal. (Jair Teixeira);
+- software final version 1.0
 
   
