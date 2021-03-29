@@ -3,9 +3,9 @@ package view;
 import com.sun.glass.events.KeyEvent;
 import javax.swing.JOptionPane;
 
-public class TelaLoguin extends javax.swing.JFrame {
+public class TelaLogin extends javax.swing.JFrame {
 
-    public TelaLoguin() {
+    public TelaLogin() {
         initComponents();
     }
 
@@ -165,7 +165,7 @@ public class TelaLoguin extends javax.swing.JFrame {
     public static void main(String args[]) {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new TelaLoguin().setVisible(true);
+                new TelaLogin().setVisible(true);
             }
         });
     }
