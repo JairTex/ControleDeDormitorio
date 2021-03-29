@@ -2,6 +2,6 @@
 
 *Nap 2: Ufra - Paragominas*
 
-- software final version 1.0
+- software final version 1.1
 
   
