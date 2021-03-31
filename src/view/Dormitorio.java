@@ -1,3 +1,6 @@
+//Autoria:Antônio Alan Silva Lima
+//        Jair Soares Teixeira
+
 package view;
 
 public final class Dormitorio {

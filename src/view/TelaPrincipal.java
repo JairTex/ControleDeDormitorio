@@ -1,3 +1,5 @@
+//Autoria:Antônio Alan Silva Lima
+//        Jair Soares Teixeira
 
 package view;
 
@@ -7,7 +9,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     //Atributo
     private String ocupado = "Não";
     
-    //Métodos
+    //Métodos especiais
     public void ocupar(){
         this.ocupado = "Sim";
     }
@@ -450,7 +452,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
     Dormitorio Cama6 = new Dormitorio();
     
     private void btnInfoCama1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnInfoCama1ActionPerformed
-        //Condição para a imoressão de informações. Só será impresso se a informação não for nula!
+        //Condição para a impressão de informações. Só será impresso se a informação não for nula!
         if (Cama1.nomeDiscente != null && Cama1.ano != null && Cama1.curso != null && Cama1.matricula != null){
             JOptionPane.showMessageDialog(null,"Dados do hóspede:\nNome: " + Cama1.nomeDiscente 
                                         + "\nCurso: " + Cama1.curso + "\nAno: " + Cama1.ano 
@@ -503,7 +505,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                             JOptionPane.showMessageDialog(null, "Operação Finalizada!");                    
                         break;
                         default: // No caso de existir alguma resposta imprevísta 
-                        JOptionPane.showMessageDialog(null, "Resposta inesperada! " + resposta3);
+                            JOptionPane.showMessageDialog(null, "Resposta inesperada! " + resposta3);
                     }
                     break;
                 case 1: //Case fazer um novo cadastro
@@ -538,12 +540,12 @@ public class TelaPrincipal extends javax.swing.JFrame {
                 case 2: //Desocupar
                     int resposta4 = JOptionPane.showConfirmDialog(null, "Deseja realmente desocupar esta cama?\n", "Atenção", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
                     if (resposta4 == JOptionPane.OK_OPTION){
-                    Cama1.nomeDiscente = null;
-                    Cama1.matricula = null;
-                    Cama1.ano = null;
-                    Cama1.curso = null;
-                    desocupar();
-                    txtStatus1.setText(String.valueOf(ocupado));
+                        Cama1.nomeDiscente = null;
+                        Cama1.matricula = null;
+                        Cama1.ano = null;
+                        Cama1.curso = null;
+                        desocupar();
+                        txtStatus1.setText(String.valueOf(ocupado));
                     }
                     else {
                     break;
@@ -678,7 +680,7 @@ public class TelaPrincipal extends javax.swing.JFrame {
                     txtStatus4.setText(String.valueOf(ocupado));
                     }
                     else {
-                    break;
+                        break;
                     }
                 break;
                 case 3: //botãoSair

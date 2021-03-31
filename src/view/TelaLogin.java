@@ -1,3 +1,6 @@
+//Autoria:Antônio Alan Silva Lima
+//        Jair Soares Teixeira
+
 package view;
 
 import com.sun.glass.events.KeyEvent;
@@ -139,12 +142,12 @@ public class TelaLogin extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         if (jTextFieldLogin.getText().equals("adm") && jPasswordFieldLogin.getText().equals("123")) {
             JOptionPane.showMessageDialog(null, "Acesso Confirmado!");            
-            TelaPrincipal principal = new TelaPrincipal();
-                principal.setVisible(true);
-                dispose();
+            TelaPrincipal principal = new TelaPrincipal(); //Ciração da tela pprincipal
+                principal.setVisible(true); //tornar visivel tela princial
+                dispose(); //fechar a tela login
         } 
         else {
-            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!", "Erro no acesso!", JOptionPane.ERROR_MESSAGE);            
+            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!", "Erro no acesso!", JOptionPane.ERROR_MESSAGE); //Mensagem de erro           
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -152,12 +155,12 @@ public class TelaLogin extends javax.swing.JFrame {
         if (evt.getKeyCode() == KeyEvent.VK_ENTER) {
             if (jTextFieldLogin.getText().equals("adm") && jPasswordFieldLogin.getText().equals("123")) {
             JOptionPane.showMessageDialog(null, "Acesso Confirmado!");            
-            TelaPrincipal principal = new TelaPrincipal();
-                principal.setVisible(true);
-                dispose();
+            TelaPrincipal principal = new TelaPrincipal(); // Objeto de  tela Principal criado
+                principal.setVisible(true); // Tela Principal visivel
+                dispose(); // fechar tela login
             } 
         else{
-            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!", "Erro no acesso!", JOptionPane.ERROR_MESSAGE);            
+            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos!", "Erro no acesso!", JOptionPane.ERROR_MESSAGE); // Mensagem de erro            
         }            
         }
     }//GEN-LAST:event_jPasswordFieldLoginKeyPressed
